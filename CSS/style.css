@@ -38,6 +38,17 @@
     color:lightblue;
 }
 
+.btn-addToCart{
+    background-color: white;
+    border: 1px solid var(--border);
+}
+.btn-addToCart:hover{
+    background-color: red;
+    color:white;
+    font-size: 110%;
+
+}
+
 /*header*/
 header{
     background-color: var(--base-color-1);
@@ -95,6 +106,7 @@ header.site-title{
     position:absolute;
     top:45%;
 }
+
 
 .site-slider .slider-btn .prev,
 .site-slider .slider-btn .next{
@@ -158,22 +170,57 @@ header.site-title{
 .site-slider-two .product{
     height:25rem;
     position:relative;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 .site-slider-two .product img{
     width:90%;
     margin:auto;
+    transition:width 1s;
 }
 
-.site-btn .btn-span{
+.site-slider-two .product img:hover{
+    width:95%;
+}
+
+.site-btn {
     padding:0.8rem 1.9rem;
     border-radius: 4rem;
     border: 1px solid var(--border);
-    background-color: white;
-    color: var(--light-gray);
+    background-color:white;
+    color: var(--base-color-1);
+}
+
+.product a:hover{
+    background-color: var(--base-color-2);
+    color: var(--base-color-1);
+}
+
+.product .btn{
+    display:inline;
 }
 
 .slider-two .slick-track .products:hover span{
     background-color: var(--base-color-1);
+}
+
+/*slider three*/
+.site-slider-three{
+    position: relative;
+    height:30%;
+}
+.site-slider-three .card img{
+    width:80%
+}
+.slider-three .card{
+    margin:10px;
+    border: 0px;
+}
+
+.item-text p {
+    color:red;
+}
+
+.item-text h5{
+    color:var(--base-color-2);
 }
