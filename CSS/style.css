@@ -168,7 +168,7 @@ header.site-title{
 }
 
 .site-slider-two .product{
-    height:25rem;
+    /* height:25rem; */
     position:relative;
     /* overflow:hidden; */
 }
@@ -184,8 +184,8 @@ header.site-title{
 }
 
 .site-btn {
-    padding:0.8rem 1.9rem;
-    border-radius: 4rem;
+    padding:0.8px 1.9px;
+    border-radius: 4px;
     border: 1px solid var(--border);
     background-color:white;
     color: var(--base-color-1);
