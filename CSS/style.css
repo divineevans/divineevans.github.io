@@ -3,7 +3,8 @@
 
 :root{
     --light-gray:#2b3032a1;
-    --primary-color:#45ccb8;
+    --base-color-1:#671524;
+    --base-color-2:#ffc116;
     --border:#2b303218;
     --text-color:#ff686b;
     --sofia: 'Sofia', cursive;
@@ -13,12 +14,16 @@
     --anton: 'Anton', sans-serif;
 }
 
-.primary-color{
-    color:var(--primary-color);
+.base-color-1{
+    color:var(--base-color-1);
 }
 
-.bg-primary-color{
-    background-color:var(--primary-color)!important;
+.base-color-2{
+    color: var(--base-color-2);
+}
+
+.bg-base-color-1{
+    background-color:var(--base-color-1)!important;
 }
 
 .text-color{
@@ -35,7 +40,7 @@
 
 /*header*/
 header{
-    background-color: var(--primary-color);
+    background-color: var(--base-color-1);
     font-family:var(--roboto);
 }
 
@@ -65,6 +70,14 @@ header.site-title{
     color:var(--light-gray) !important;
 }
 
+.navbar-nav .nav-link:hover{
+    color:var(--base-color-2) !important;
+}
+
+.navbar-nav .active .nav-link{
+    color:var(--base-color-1) !important;
+}
+
 .navbar-nav .nav-item .nav-link{
     padding:0 1.3em;
 }
@@ -85,7 +98,7 @@ header.site-title{
 
 .site-slider .slider-btn .prev,
 .site-slider .slider-btn .next{
-    background-color:var(--primary-color);
+    background-color:var(--base-color-1);
     padding:1rem 1.5rem;
     border-radius:10rem;
     color:white;
@@ -162,5 +175,5 @@ header.site-title{
 }
 
 .slider-two .slick-track .products:hover span{
-    background-color: var(--primary-color);
+    background-color: var(--base-color-1);
 }

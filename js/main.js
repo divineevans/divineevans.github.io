@@ -17,5 +17,22 @@ $(".slider-two")
     nextArrow:".site-slider-two .slider-btn .next",
     slidesToShow:5,
     slidesToScroll:1,
-    autoplaySpeed:3000
+    autoplaySpeed:3000,
+    responsive: [
+        {
+            breakpoint:900,
+            settings:{
+                slidesToShow:4,
+                slidesToScroll:2
+            }
+        },
+        {
+            breakpoint:650,
+            settings:{
+                slidesToShow:3,
+                slidesToScroll:3
+            }
+        }
+        
+    ]
 });
