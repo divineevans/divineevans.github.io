@@ -5,6 +5,7 @@
     --light-gray:#2b3032a1;
     --base-color-1:#671524;
     --base-color-2:#ffc116;
+    --base-color-3:#096982;
     --border:#2b303218;
     --text-color:#ff686b;
     --sofia: 'Sofia', cursive;
@@ -44,6 +45,18 @@
 }
 .btn-addToCart:hover{
     background-color: red;
+    color:white;
+    font-size: 110%;
+
+}
+.btn-more{
+    background-color: var(--base-color-3);
+    border: 1px solid var(--border);
+    color:white;
+}
+
+.btn-more:hover{
+    /* background-color: red; */
     color:white;
     font-size: 110%;
 
@@ -205,6 +218,11 @@ header.site-title{
 }
 
 /*slider three*/
+.featured-title h2{
+    font-family: var(--sofia);
+    padding-top:1em;
+}
+
 .site-slider-three{
     position: relative;
     height:30%;
