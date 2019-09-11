@@ -244,3 +244,32 @@ header.site-title{
     color:var(--base-color-2);
 }
 
+/*footer*/
+.insta-pics{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
+
+.insta-pics img {
+    margin: 0px;
+    padding:0px;
+    transition: all 1s;
+}
+
+.insta-pics img:hover{
+    transform: scale(1.1);
+}
+
+.bottom {
+    background-image: url('../images/backgrounds/footer.jpg');
+    background-repeat: no repeat;
+    background-position: center;
+    background-color: var(--base-color-2);
+}
+
+.bottom img{
+    width: 6em;
+    vertical-align: center;
+}
